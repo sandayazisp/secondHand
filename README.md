@@ -1,5 +1,5 @@
 # My Furniture
-Merupakan web toko online yang menjual beberapa furniture. Terdapat halaman user yang digunakan untuk memesan product dan halaman admin yang digunakan untuk mengelola data web. Web ini merupakan tugas dalam salah satu matakuliah di kampus.
+Merupakan web toko online yang menjual baju thrift atau baju bekas dengan brand tertentu (lokal/impor) yang memang masih layak dijual kembali dan tentunya dengan model baju yang kekinian.
 
 ### Teknologi yang digunakan
 * XAMPP
@@ -8,9 +8,9 @@ Merupakan web toko online yang menjual beberapa furniture. Terdapat halaman user
 * PHP
 * HTML & CSS
 
-### Demo Web
-* [clien](http://myfurniture.arifnurrohman.xyz)
-* [admin](http://myfurniture.arifnurrohman.xyz/admin)
+### User Akun
+* username  : user
+* password  : user
 
 ### Admin Akun
 * username  : admin
