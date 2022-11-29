@@ -53,15 +53,15 @@
     <div class="banner mb-3">
         <div class="container-fluid img">
             <div class="container-fluid box">
-                <h3>CONTACT US</h3>
-                <p>Home > <a href="#">Contact Us</a></p>
+                <h3 class="text-uppercase">Kontak kami</h3>
+                <p>Beranda > <a href="#">Kontak Kami</a></p>
             </div>
         </div>
     </div>
 
-    <div class="container bg-white rounded pt-4 pb-4">
+    <div class="container bg-white rounded pt-4" style="height: 50vh;">
         <div class="row">
-            <div class="col-md-8 col-sm-12 pr-4">
+            <!-- <div class="col-md-8 col-sm-12 pr-4">
                 <form action="" method="post">
                     <div class="form-row">
                         <div class="col-md-4 mb-3">
@@ -100,47 +100,21 @@
                             onclick="validate();" />
                     </div>
                 </form>
-            </div>
-            <div class="col-md-4 col-sm-12 text-left">
-                <h5>Contact Info</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dignissimos modi
-                    dolorem?</p>
-                <i class="fa fa-tty"></i> 0823 3232 4442 <br>
-                <i class="fa fa-envelope"></i> myfurniture@gmail.com <br>
-                <i class="fa fa-hourglass"></i> Monday - Saturday (08.00 - 17.00) <br>
-                <i class="fa fa-map-marker"></i> Jl.Suka Saya Km 23 <br>
+            </div> -->
+            <div class="col-md-12 col-sm-12 text-center">
+                <h5>Kontak Info</h5>
+                <p>Untuk info lebih lanjut hubungi kontak dibawah ini.</p>
+                <i class="fa fa-tty"></i> 0823 3232 4442 <i class="mr-3"></i>
+                <i class="fa fa-envelope"></i> secondhand@gmail.com <i class="mr-3"></i>
+                <i class="fa fa-hourglass"></i> Senin - Jumat (08.00 - 17.00) 
+                <!-- <i class="fa fa-map-marker"></i> Jl.Suka Saya Km 23 <br> -->
 
             </div>
-        </div>
-
-        <div class="row mt-5">
-            <h3 class="mb-2"><span class="text-primary"> COORDINATE </span>LOCATION
-            </h3>
-            <div id="googleMap"></div>
-        </div>
+        </div>        
     </div>
 
     <script>
-        // Initialize and add the map
-        function initMap() {
-
-            var maps = {
-                lat: -7.749923587395794,
-                lng: 110.41867017745972
-            };
-
-            var map = new google.maps.Map(
-                document.getElementById('googleMap'), {
-                    zoom: 17,
-                    center: maps
-                });
-
-            var marker = new google.maps.Marker({
-                position: maps,
-                map: map
-            });
-        };
-
+        // Initialize and add the map        
         function validate() {
             var var1 = document.getElementById("validationDefault01").value;
             var var2 = document.getElementById("validationDefault02").value;

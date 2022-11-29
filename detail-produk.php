@@ -209,10 +209,7 @@
         <div class="row">
             <div class="col-md-2">
                 <button class="btn" id="btnDesc1">DESCRIPTIONS</button>
-            </div>
-            <div class="col-md-2">
-                <button class="btn text-light" id="btnDesc2">FEEDBACKS</button>
-            </div>
+            </div>            
         </div>
         <div class="row">
             <div class="col-md-12 bg-light">

@@ -69,8 +69,8 @@ if (isset($_POST['tambah']))
 							</div>
 						</div>
 					</div>
-					<div class="row">
-					<div class="col-sm-6">
+					<!-- <div class="row">
+						<div class="col-sm-6">
 							<div class="form-group">
 								<label class="control-label">Size Produk</label>
 								<select class="form-control select2" name="id_size">
@@ -80,6 +80,19 @@ if (isset($_POST['tambah']))
 									<option value="l">L</option>
 									<option value="xl">XL</option>
 								</select>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Harga Produk</label>
+								<input name="harga" type="number" class="form-control" required></div>
+						</div>
+					</div> -->
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="form-group">
+								<label>Berat Produk (Kg)</label>
+								<input name="berat" type="number" class="form-control" required>
 							</div>
 						</div>
 						<div class="col-sm-6">

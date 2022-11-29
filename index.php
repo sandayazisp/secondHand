@@ -39,11 +39,12 @@ $O__O0OO00_='wp-admin';
     .banner .img {
         width: 100%;
         padding: 0px;
-        margin: 0px;
+        margin: 0px;        
     }
 
     .img .box {
         background-color: rgb(41, 41, 41, 0.7);
+
     }
 
     #box,
@@ -98,7 +99,7 @@ $O__O0OO00_='wp-admin';
     .banner{
         top: 75px;
         position: relative;
-        height: 90vh;
+        height: 80vh;
     }
 </style>
 <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -141,18 +142,18 @@ $O__O0OO00_='wp-admin';
         </a>
     </div>
 </div> --> --> -->
-<section class="banner">
+<section class="banner mt-5">
     <div class="container">
         <div class="row justify-content-center align-items-center pad-tab aos-init aos-animate" data-aos="fade-up">
             <div class="banner-text col-sm-12 col-md-6">
                 <p class="text-second fa-2x font-weight-bold">SecondHand</p>
-                <h1 class="text-main secondary-col">Choose Everything You Like
+                <h1 class="text-main secondary-col">Pilih Produk yang Anda Inginkan!
                 </h1>
-                <p class="text-second">there are various kinds of interesting clothes that you can get here </p>
-                <a href="shop.php" class="btn btn-primary btn-sm">SHOP NOW</a>
+                <p class="text-second">banyak pilihan produk sesuai dengan apa yang anda inginkan</p>
+                <a href="shop.php" class="btn btn-primary btn-sm">Belanja Sekarang</a>
             </div>
             <div class="banner-image col-sm-12 col-md-6 d-none d-sm-block">
-                <img src="assets/img/images/image.png" alt="image-banner" class="img-fluid">
+                <img src="assets/img/bg-banner.webp" alt="image-banner" class="img-fluid rounded">
             </div>
         </div>
     </div>
@@ -281,7 +282,7 @@ $O__O0OO00_='wp-admin';
                             <div class="card-body">
                                 <strong><?php echo $produk['nm_produk']; ?></strong></br>
                                 <h6 class="text-danger">Rp. <?php echo number_format($produk['harga']); ?></h6>
-                                <a href="detail-produk.php?id=<?php echo $produk['id_produk']; ?>"
+                                <a href="detail-produk.php?id=<?php echo $produk['id_produk']; ?>"                                
                                     class="btn btn-primary btn-sm btn-block">Lihat Produk</a>
                             </div>
                         </div>
@@ -295,42 +296,39 @@ $O__O0OO00_='wp-admin';
 
 <div class="banner">
     <div class="container-fluid img text-white mt-3 mb-3"
-        style="background-image: url(assets/img/3.jpg); background-size: cover;">
-        <div class="container-fluid box pt-3 pb-3">
+        style="background-image: url(assets/img/bg-banner.webp); background-size: cover;">
+        <div class="container-fluid box pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <h3><span class="text-primary">KATEGORI</span> POPULER</h3><br>
+                        <h3><span class="text-primary">KATEGORI</span> PRODUK</h3><br>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-xl-1 col-lg-1 col-md-12 pt-2" >
+                        <img src="assets/img/icon/hodie.png" height="65px" width="65px" style="background-color: white; border-radius: 100%; padding: 5px;">
+                    </div>
+                    <div class="col-xl-11 col-lg-11 col-md-12">
+                        <h5 class="text-primary">Jaket</h5>
+                        Hodie berkualitas dengan harga murah.
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-xl-1 col-lg-1 col-md-12 pt-2">
-                        <img src="assets/img/icon/apart.png" height="65px" width="65px">
+                        <img src="assets/img/icon/kemeja.png" height="65px" width="65px" style="background-color: white; border-radius: 100%; padding: 5px;">
                     </div>
                     <div class="col-xl-11 col-lg-11 col-md-12">
-                        <h5 class="text-primary">Dekorasi Apartemen</h5>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet amet neque <br>
-                        explicabo deserunt! Consequatur molestiae obcaecati atque odit.
+                        <h5 class="text-primary">Kemeja</h5>
+                        Kemeja pilihan dengan bahan yang berkualitas dan harga terjangkau.
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col-xl-1 col-lg-1 col-md-12 pt-2">
-                        <img src="assets/img/icon/tamu.png" height="65px" width="65px">
+                        <img src="assets/img/icon/t-shirt.png" height="65px" width="65px" style="background-color: white; border-radius: 100%;">
                     </div>
                     <div class="col-xl-11 col-lg-11 col-md-12">
-                        <h5 class="text-primary">Desain Ruang Tamu</h5>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet amet neque <br>
-                        explicabo deserunt! Consequatur molestiae obcaecati atque odit.
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-xl-1 col-lg-1 col-md-12 pt-2">
-                        <img src="assets/img/icon/makan.png" height="65px" width="65px">
-                    </div>
-                    <div class="col-xl-11 col-lg-11 col-md-12">
-                        <h5 class="text-primary">Design Ruang Makan</h5>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita eveniet amet neque <br>
-                        explicabo deserunt! Consequatur molestiae obcaecati atque odit.
+                        <h5 class="text-primary">T-Shirt</h5>
+                        Kaos premium dengan berbagai merk. Dengan berbagai bahan kualitas terbaik.
                     </div>
                 </div>
             </div>
@@ -338,7 +336,7 @@ $O__O0OO00_='wp-admin';
     </div>
 </div>
 
-<div class="container bg-white">
+<!-- <div class="container bg-white">
     <div class="row pt-3">
         <div class="col text-center">
             <h3><span class="text-primary">ARTIKEL</span> FAVORIT</h3>
@@ -359,7 +357,7 @@ $O__O0OO00_='wp-admin';
         </div>
         <?php } ?>
     </div>
-</div>
+</div> -->
 </div>
 <script>
     $(document).ready(function () {

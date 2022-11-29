@@ -3,7 +3,7 @@
     .banner .img {
         width: 100%;
         height: 250px;
-        background-image: url('assets/img/4.jpg');
+        background-image: url('assets/img/bg-banner.webp');
         padding: 0px;
         margin: 0px;
     }
@@ -185,7 +185,7 @@
                         <div class="card-body">
                             <strong><?php echo $produk['nm_produk']; ?></strong></br>
                             <h6 class="text-danger">Rp. <?php echo number_format($produk['harga']); ?></h6>
-                            <a href="detail-produk.php?id=<?php echo $produk['id_produk']; ?>"
+                            <a href="detail-produk.php?id=<?php echo $produk['id_produk']; ?>"                            
                                 class="btn btn-primary btn-sm btn-block">Lihat Produk</a>
                         </div>
                     </div>

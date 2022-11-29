@@ -53,9 +53,12 @@
                         <span> Transaksi <span class="pull-right"><i class="mdi mdi-chevron-right"></i></span></span></a>
                     <ul class="list-unstyled">
                         <li>
-                            <a href="index.php?pages=order">Semua Transaksi<span
+                            <a href="#">Semua Transaksi<span
                                     class="badge badge-pill badge-success pull-right">15</span>
                                 </span></a>
+                            <!-- <a href="index.php?pages=order">Semua Transaksi<span
+                                    class="badge badge-pill badge-success pull-right">15</span>
+                                </span></a> -->
                         </li>
                     </ul>
                 </li>
@@ -63,9 +66,9 @@
                 <li>
                     <a href="#"><i class="mdi mdi-settings"></i>Pengaturan</a>
                 </li> -->
-                <li>
+                <!-- <li>
                     <a href="#"><i class="mdi mdi-near-me"></i>Laporan</a>
-                </li>
+                </li> -->
                 <li>
                     <a href="index.php?pages=logout"><i class="mdi mdi-logout"></i>Logout</a>
                 </li>

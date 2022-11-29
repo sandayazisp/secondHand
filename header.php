@@ -126,14 +126,13 @@
                             ?>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="about.php">Tentang Kami</a>
+                            <a class="nav-link" href="about.php">Tentang Kami</a>                            
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item">                            
                             <a class="nav-link" href="contact.php">Kontak</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="cart.php"><i class="mdi mdi-cart-outline text-primary"
-                                    style="font-size: 17px;"></i></a>
+                            <a class="nav-link" href="cart.php"><i class="mdi mdi-cart-outline text-primary" style="font-size: 17px;"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -141,7 +140,10 @@
                 <button class="btn btn-primary navbar-btn m-2"
                     onclick="window.location.href='logout.php'">Logout</button>
                 <?php else: ?>
-                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='login.php'">Login</button>
+                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='login.php'">Login</button> -->
+                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Login</button>
+                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Daftar</button>
+                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='signup.php'">Daftar</button> -->
                 <?php endif ?>
 
             </div>

@@ -46,8 +46,8 @@
 <div class="banner mb-3">
     <div class="container-fluid img">
         <div class="container-fluid box">
-            <h3>ABOUT US</h3>
-            <p>Home > <a href="#">About Us</a></p>
+            <h3 class="text-uppercase">Tentang Kami</h3>
+            <p>Beranda > <a href="#">Tentang Kami</a></p>
         </div>
     </div>
 </div>
@@ -55,25 +55,12 @@
 <div class="container bg-white rounded pt-4 pb-4">
     <div class="row no-gutter">
         <div class="col-sm-8 text-justify">
-            <h4>ABOUT US MY FURNITURE</h4>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore officia iste nemo
-                placeat
-                quo tempora dolorum magnam similique? Voluptas mollitia autem corrupti laudantium iure
-                laborum
-                quia doloremque enim facere.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit labore officia iste nemo
-                placeat
-                quo tempora dolorum magnam similique? Voluptas mollitia autem corrupti laudantium iure
-                laborum
-                quia doloremque enim facere. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit
-                labore officia iste nemo
-                placeat
-                quo tempora dolorum magnam similique? Voluptas mollitia autem corrupti laudantium iure
-                laborum
-                quia doloremque enim facere.</p>
+            <h4 class="text-center text-uppercase">secondhand Thrift</h4>
+            <p>Sebuah website penjualan online untuk para penjual baju thrift. Dimana website tersebut akan mempermudah penjual maupun pembeli dalam menjual dan membeli produk tanpa harus menunggu adanya event dan kesusahan dalam mencari toko. Website ini dapat diakses kapanpun, dimanapun,dan oleh siapapun.</p>
+            <p>Thrift merupakan berbagai produk seken atau bekas baik lokal maupun impor. Biasanya, barang-barang ini ditawarkan dengan harga yang sangat murah. System ini membuka dan menyediakan berbagai jenis baju thrift mulai dari kemeja, hoodie, kaos, sweater, dan lain lain.</p>           
         </div>
         <div class="col-sm-4">
-            <img src="assets/img/14.jpg" height="300px" width="100%">
+            <img src="assets/img/banner-thrift.jpg" height="300px" width="100%">
         </div>
     </div>
 </div>

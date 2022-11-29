@@ -35,76 +35,8 @@
         }
     </style>
     <footer>
-        <div class="page-footer font-small indigo  bg-primary mt-3">
-            <div class="container-fluid text-center text-md-left">
-                <div class="row text-white">
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-2">ABOUT US</h5>
-                        My Furniture is a website that sells a variety of good quality furniture or household appliances.
-                        <br>
-                        <img src="assets/img/icon/ig.PNG" height="25px" width="25px" alt="">
-                        <img src="assets/img/icon/fb.png" height="25px" width="25px" alt="">
-                        <img src="assets/img/icon/twitter.png" height="23px" width="23px" alt="">
-                    </div>
-                    <div class="col-md-2.5 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-2">CUSTOMER SERVICE</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Contact Us</a>
-                            </li>
-                            <li>
-                                <a href="#!">Ordering & Payment</a>
-                            </li>
-                            <li>
-                                <a href="#!">Delivery</a>
-                            </li>
-                            <li>
-                                <a href="#!">Return</a>
-                            </li>
-                            <li>
-                                <a href="#!">Related Questions</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-1.5 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-2">INFORMATION</h5>
-                        <ul class="list-unstyled">
-                            <li>
-                                <a href="#!">Personal Privasi</a>
-                            </li>
-                            <li>
-                                <a href="#!">Terms and conditions</a>
-                            </li>
-                            <li>
-                                <a href="#!">Press Question</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-2">NEWSLETTER</h5>
-                        <form action="#">
-                            <div class="input-group">
-                                <input class="btn i bg-primary text-white text-md-left" name="email" id="email"
-                                    type="email" placeholder="Your Email">
-                                <button class="btn btn-info o bg-white text-primary" type="submit">OK</button>
-                            </div>
-                        </form>
-                    </div>
-                    <hr class="clearfix w-100 d-md-none">
-                    <div class="col-md-2 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mt-3 mb-2">CONTACT US</h5>
-                        <ul class="list-unstyled">
-                            +62 8167 2837 2626 <br>
-                            myfurniture@gmail.com <br>
-                            Jl.Sukasaya Km 17
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright text-center py-3 bg-dark text-white">©2020 Copyright :
-                <a href="index.html"> myfurniture.tugassaya.com</a>
+        <div class="page-footer font-small indigo  bg-primary mt-3">            
+            <div class="footer-copyright text-center py-3 bg-dark text-white">©2020 Copyright SecondHand                
             </div>
         </div>
     </footer>

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="assets/img/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/img/icon/logo3.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -208,7 +208,7 @@
     <div class="signup-form">
         <form action="" method="post">
             <h2>Log In</h2>
-            <p>Please enter your account correctly!</p>
+            <p>Silahkan Masukkan Akun Anda!</p>
             <hr>
             <div class="form-group">
                 <div class="input-group">
@@ -223,22 +223,11 @@
                     <input type="password" class="form-control" id="password" name="p" placeholder="Password"
                         required="required">
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="g-recaptcha" data-sitekey="6LeezsoUAAAAAC6Kg5VNk8OyNbC391MpJVvDz2Up"></div>
-            </div>
-            <div class="form-group text-right">
-                <label class="forget"><a href="#">Forget Password?</a></label>
-            </div>
-            <button class="btn btn-primary btn-lg" name="login" id="submit">Login</button>
-            <p class="c text-center">Or</p>
-            <div class="sosmed">
-                <div class="sosmed-items bg1"><i class="fa fa-facebook"></i></div>
-                <div class="sosmed-items bg2"><i class="fa fa-twitter"></i></div>
-                <div class="sosmed-items bg3"><i class="fa fa-google"></i></div>
-            </div>
+            </div>                        
+            <button class="btn btn-primary btn-lg" name="login" id="submit">Login</button>                        
             <div class="form-group text-right down">
-                <label class="forget"> Don't have an account? <a href="signup.php">Sign Up</a></label>
+                <label class="forget"> Tidak Punya Akun? <a href="signup.php">Daftar</a></label>
+                <!-- <label class="forget"> Don't have an account? <a href="signup.php">Sign Up</a></label> -->
             </div>
         </form>
         <?php

@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="assets/img/icon/favicon.png">
+    <link rel="shortcut icon" href="assets/img/icon/logo3.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
@@ -164,8 +164,8 @@
 <body>
     <div class="signup-form">
         <form action="" method="post">
-            <h2>Sign Up</h2>
-            <p>Please fill in this form to create an account!</p>
+            <h2>Daftar</h2>
+            <!-- <p>Please fill in this form to create an account!</p> -->
             <hr>
             <div class="form-group">
                 <div class="input-group">
@@ -195,13 +195,13 @@
                         required="required">
                 </div>
             </div>
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a
                         href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
-            </div>
-            <button class="btn btn-success btn-lg" name="signup" id="submit">Sign Up</button>
+            </div> -->
+            <button class="btn btn-success btn-lg" name="signup" id="submit">Daftar</button>
             <div class="form-group text-right down">
-                <label class="checkbox-inline">Already have an account? <a href="login.php">Log In</a></label>
+                <label class="checkbox-inline">Sudah Punya Akun? <a href="login.php">Log In</a></label>
             </div>
         </form>
         </div>
