@@ -3,7 +3,7 @@
     .banner .img {
         width: 100%;
         height: 250px;
-        background-image: url('assets/img/4.jpg');
+        background-image: url('assets/img/bg-banner.webp');
         padding: 0px;
         margin: 0px;
     }

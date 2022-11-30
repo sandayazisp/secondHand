@@ -166,12 +166,12 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-md-5">
-                        <button class="btn btn-primary btn-block" name="beli">
-                            <i class="fa fa-cart-plus" aria-hidden="true"></i> Masukkan Keranjang
+                        <button class="btn btn-primary btn-block" name="beli" onclick="masuk();">
+                            <i class="fa fa-cart-plus" aria-hidden="true" ></i> Masukkan Keranjang
                         </button>
                     </div>
                     <div class="col-md-5">
-                        <button class="btn btn-primary btn-block ml-3" name="beli2">
+                        <button class="btn btn-primary btn-block ml-3" name="beli2" onclick="masuk();">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i> Beli Sekarang
                         </button>
                     </div>
@@ -184,24 +184,85 @@
 
                     if (isset($_SESSION['cart'][$id])) {
                         $_SESSION['cart'][$id]+=$jumlah;
+                        echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
                     }
-                    else {
-                        $_SESSION['cart'][$id] = $jumlah;
+                    else if (!isset($_SESSION["pelanggan"][$id])) {
+                        echo "<script type='text/javascript'>
+                                function masuk() {
+                                    swal({
+                                        title: 'Anda Belum Login',
+                                        text: 'Silahkan Melakukan Login terlebih Dahulu!',
+                                        icon: 'info',
+                                        button: 'Login Sekarang',
+                                        infomode: true,
+                                    }).then(okay => {
+                                        if (okay) {
+                                            window.location.href ='login.php';
+                                        };
+                                    });
+                                }
+                            </script>";
+                        // } else if (isset($_SESSION["cart"][$id])) {
+                        //     $_SESSION['cart'][$id]+=$jumlah;
+                        //     echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
+                        // }
                     }
-                    echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
                 }
                 elseif (isset($_POST['beli2'])) {
                     $jumlah =$_POST['stok'];
 
                     if (isset($_SESSION['cart'][$id])) {
                         $_SESSION['cart'][$id]+=$jumlah;
+                        echo "<script>location='cart.php';</script>";
                     }
-                    else {
-                        $_SESSION['cart'][$id] = $jumlah;
+                    else if (!isset($_SESSION["pelanggan"][$id])){
+                            echo "<script type='text/javascript'>
+                                    function masuk() {
+                                        swal({
+                                            title: 'Anda Belum Login',
+                                            text: 'Silahkan Melakukan Login terlebih Dahulu!',
+                                            icon: 'info',
+                                            button: 'Login Sekarang',
+                                            infomode: true,
+                                        }).then(okay => {
+                                            if (okay) {
+                                                window.location.href ='login.php';
+                                            };
+                                        });
+                                    }
+                                </script>";
+                        // } else if (isset($_SESSION["cart"][$id])) {
+                        //     $_SESSION['cart'][$id]+=$jumlah;
+                        //     echo "<script>location='cart.php';</script>";
+                        // }
                     }
-                    echo "<script>location='cart.php';</script>";
                 }
-            ?>
+        ?>
+        <?php
+                // if (isset($_POST['beli'])) {
+                //     $jumlah =$_POST['stok'];
+
+                //     if (isset($_SESSION['cart'][$id])) {
+                //         $_SESSION['cart'][$id]+=$jumlah;
+                //     }
+                //     else {
+                //         $_SESSION['cart'][$id] = $jumlah;
+                //     }
+                    
+                //     echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
+                // }
+                // elseif (isset($_POST['beli2'])) {
+                //     $jumlah =$_POST['stok'];
+
+                //     if (isset($_SESSION['cart'][$id])) {
+                //         $_SESSION['cart'][$id]+=$jumlah;
+                //     }
+                //     else {
+                //         $_SESSION['cart'][$id] = $jumlah;
+                //     }
+                //     echo "<script>location='cart.php';</script>";
+                // }
+        ?>
     </div>
     <br>
     <hr>

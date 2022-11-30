@@ -35,8 +35,8 @@
 <div class="banner mb-3">
     <div class="container-fluid img">
         <div class="container-fluid box">
-            <h3>Cart</h3>
-            <p>Home > <a href="#">Cart</a></p>
+            <h3>Keranjang Belanja</h3>
+            <p>Home > <a href="#">Keranjang Belanja</a></p>
         </div>
     </div>
 </div>
