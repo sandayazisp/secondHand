@@ -164,104 +164,71 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-4">
-                    <div class="col-md-5">
-                        <button class="btn btn-primary btn-block" name="beli" onclick="masuk();">
-                            <i class="fa fa-cart-plus" aria-hidden="true" ></i> Masukkan Keranjang
-                        </button>
+                <div class="row mt-4">                    
+                    <div class="col-md-5">                    
+                        <?php if (!isset($_SESSION["pelanggan"])){
+                            echo "                        
+                            <a href='#' class='btn btn-primary btn-block disabled'><i class='fa fa-cart-plus disabled' aria-hidden='true' ></i>  Masukkan Keranjang </a>
+                            ";
+                            }else {
+                                echo "
+                                <button class='btn btn-primary btn-block' name='beli'>
+                                    <i class='fa fa-cart-plus' aria-hidden='true' ></i> Masukkan Keranjang
+                                </button>    
+                                ";                                
+                            }
+                        ?>                            
                     </div>
                     <div class="col-md-5">
-                        <button class="btn btn-primary btn-block ml-3" name="beli2" onclick="masuk();">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i> Beli Sekarang
-                        </button>
+                    <?php if (!isset($_SESSION["pelanggan"])){
+                            echo "
+                            <a href='#' class='btn btn-primary btn-block ml-3 disabled'>
+                                <i class='fa fa-shopping-cart' aria-hidden='true'></i> Beli Sekarang
+                            </a>
+                            ";
+                            }else {
+                                echo "
+                                <button class='btn btn-primary btn-block ml-3' name='beli2'>
+                                    <i class='fa fa-shopping-cart' aria-hidden='true'></i> Beli Sekarang
+                                </button>
+                                ";                                
+                            }
+                        ?>                        
                     </div>
+                    <?php if (!isset($_SESSION["pelanggan"])){
+                        echo "
+                            <p class='fs-1' style='font-size: 12px; margin-top: 5px; color: red;'>*Note : User harus login terlebih dahulu untuk memasukkan produk ke keranjang atau membeli produk</p>
+                        ";
+                        }
+                    ?>   
+                    
                 </div>
         </div>
-        </form>
+        </form>                
         <?php
                 if (isset($_POST['beli'])) {
                     $jumlah =$_POST['stok'];
 
                     if (isset($_SESSION['cart'][$id])) {
                         $_SESSION['cart'][$id]+=$jumlah;
-                        echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
                     }
-                    else if (!isset($_SESSION["pelanggan"][$id])) {
-                        echo "<script type='text/javascript'>
-                                function masuk() {
-                                    swal({
-                                        title: 'Anda Belum Login',
-                                        text: 'Silahkan Melakukan Login terlebih Dahulu!',
-                                        icon: 'info',
-                                        button: 'Login Sekarang',
-                                        infomode: true,
-                                    }).then(okay => {
-                                        if (okay) {
-                                            window.location.href ='login.php';
-                                        };
-                                    });
-                                }
-                            </script>";
-                        // } else if (isset($_SESSION["cart"][$id])) {
-                        //     $_SESSION['cart'][$id]+=$jumlah;
-                        //     echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
-                        // }
+                    else {
+                        $_SESSION['cart'][$id] = $jumlah;
                     }
+                    
+                    echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
                 }
                 elseif (isset($_POST['beli2'])) {
                     $jumlah =$_POST['stok'];
 
                     if (isset($_SESSION['cart'][$id])) {
                         $_SESSION['cart'][$id]+=$jumlah;
-                        echo "<script>location='cart.php';</script>";
                     }
-                    else if (!isset($_SESSION["pelanggan"][$id])){
-                            echo "<script type='text/javascript'>
-                                    function masuk() {
-                                        swal({
-                                            title: 'Anda Belum Login',
-                                            text: 'Silahkan Melakukan Login terlebih Dahulu!',
-                                            icon: 'info',
-                                            button: 'Login Sekarang',
-                                            infomode: true,
-                                        }).then(okay => {
-                                            if (okay) {
-                                                window.location.href ='login.php';
-                                            };
-                                        });
-                                    }
-                                </script>";
-                        // } else if (isset($_SESSION["cart"][$id])) {
-                        //     $_SESSION['cart'][$id]+=$jumlah;
-                        //     echo "<script>location='cart.php';</script>";
-                        // }
+                    else {
+                        $_SESSION['cart'][$id] = $jumlah;
                     }
+                    echo "<script>location='cart.php';</script>";
                 }
-        ?>
-        <?php
-                // if (isset($_POST['beli'])) {
-                //     $jumlah =$_POST['stok'];
-
-                //     if (isset($_SESSION['cart'][$id])) {
-                //         $_SESSION['cart'][$id]+=$jumlah;
-                //     }
-                //     else {
-                //         $_SESSION['cart'][$id] = $jumlah;
-                //     }
-                    
-                //     echo "<script type='text/javascript'>swal('','Produk Sudah Masuk Ke Keranjang Belanja', 'success');</script>";
-                // }
-                // elseif (isset($_POST['beli2'])) {
-                //     $jumlah =$_POST['stok'];
-
-                //     if (isset($_SESSION['cart'][$id])) {
-                //         $_SESSION['cart'][$id]+=$jumlah;
-                //     }
-                //     else {
-                //         $_SESSION['cart'][$id] = $jumlah;
-                //     }
-                //     echo "<script>location='cart.php';</script>";
-                // }
         ?>
     </div>
     <br>

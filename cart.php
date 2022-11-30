@@ -36,7 +36,7 @@
     <div class="container-fluid img">
         <div class="container-fluid box">
             <h3>Keranjang Belanja</h3>
-            <p>Home > <a href="#">Keranjang Belanja</a></p>
+            <p>Beranda > <a href="#">Keranjang Belanja</a></p>
         </div>
     </div>
 </div>

@@ -103,7 +103,7 @@
     <header>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white m-0 p-0">
             <div class="container pl-3 pr-3">
-                <a class=" navbar-brand" href="#">
+                <a class=" navbar-brand" href="index.php">
                     <img src="assets/img/icon/logo3.png" width="80" height="50" alt="">
                     <!-- <p>SecondHand</p> -->
                 </a>
@@ -140,10 +140,10 @@
                 <button class="btn btn-primary navbar-btn m-2"
                     onclick="window.location.href='logout.php'">Logout</button>
                 <?php else: ?>
-                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='login.php'">Login</button> -->
-                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Login</button>
-                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Daftar</button>
-                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='signup.php'">Daftar</button> -->
+                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='login.php'">Login</button>
+                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Login</button> -->
+                <!-- <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='#'">Daftar</button> -->
+                <button class="btn btn-primary navbar-btn m-2" onclick="window.location.href='signup.php'">Daftar</button>
                 <?php endif ?>
 
             </div>
